@@ -1,6 +1,5 @@
 const express = require("express");
 const morgan = require("morgan");
-const IssueRoutes = require("./src/routes/issueRoutes");
 require("dotenv").config();
 const connectToDB = require("./src/db/config");
 
@@ -14,7 +13,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 // routes
-app.use("/", IssueRoutes);
+app.use("/", require("./src/routes/"));
 
 const PORT = process.env.PORT || 8000;
 
