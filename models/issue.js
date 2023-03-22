@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const issueSchema = new mongoose.Schema(
   {
@@ -25,9 +25,11 @@ const issueSchema = new mongoose.Schema(
       },
     ],
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+  }
 );
 
-const Issue = mongoose.model("Issue", issueSchema);
+const Issue = mongoose.model('Issue', issueSchema);
 
 module.exports = Issue;

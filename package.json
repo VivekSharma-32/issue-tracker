@@ -1,32 +1,21 @@
 {
-  "name": "issue-tracker",
+  "name": "ninja-bug-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Nodejs + ejs Application to track issues/bugs for a project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"nodemon index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VivekSharma-32/issue-tracker.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Vivek Raj",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/VivekSharma-32/issue-tracker/issues"
-  },
-  "homepage": "https://github.com/VivekSharma-32/issue-tracker#readme",
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "ejs": "^3.1.9",
-    "express": "^4.18.2",
+    "config": "^3.3.7",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
     "express-ejs-layouts": "^2.5.1",
-    "mongoose": "^7.0.2",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.21"
+    "mongoose": "^6.4.1",
+    "nodemon": "^2.0.18"
   }
 }
