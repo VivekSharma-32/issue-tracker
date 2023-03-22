@@ -4,7 +4,7 @@ A Nodejs + EJS + MongoDB + Express application to track issues/bugs for a projec
 
 # How to use ?
 
-Run this command in your GitHub CLI
+Run this command npm start in ur terminal.
 
 # Features
 
