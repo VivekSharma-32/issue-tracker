@@ -1,13 +1,13 @@
 //get the form
-let searchIssueForm = document.getElementById('search-issue-form');
+let searchIssueForm = document.getElementById("search-issue-form");
 // get the details of the issues of the project in json
-let searchJson = document.getElementById('issue-data').getAttribute('data');
+let searchJson = document.getElementById("issue-data").getAttribute("data");
 // parse the data
 let searchIssues = JSON.parse(searchJson);
 // get element where searched t will be shown
-let searchList = document.getElementById('issues-list');
+let searchList = document.getElementById("issues-list");
 
-searchIssueForm.addEventListener('submit', function (e) {
+searchIssueForm.addEventListener("submit", function (e) {
   e.preventDefault();
 
   //create empty array where result will be stored
@@ -28,10 +28,10 @@ searchIssueForm.addEventListener('submit', function (e) {
     }
   });
   //create a div and add details of the searched issues
-  searchList.innerHTML = '';
+  searchList.innerHTML = "";
   for (let issue of searchedIssues) {
-    let Div = document.createElement('div');
-    Div.style = 'none';
+    let Div = document.createElement("div");
+    Div.style = "none";
     Div.innerHTML = `
       <div class="card w-100" >
     <div class="card-body" >
